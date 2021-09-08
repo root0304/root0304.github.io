@@ -74,11 +74,9 @@
                 }else{
                     document.getElementById("sf").innerHTML = window.localStorage.sf;
                 }
-                if (window.localStorage.kou == "出口") {
-                    document.getElementById("kou").style.backgroundColor = '#be37cb'
+                 document.getElementById("kou").style.backgroundColor = '#be37cb'
                     document.getElementById("kou").style.color = '#f9e0ab'
-                    
-                    
+
                     document.getElementById("border").style.border = "22px solid #fcedfe"
                     setInterval(() => {
                         document.getElementById("border").classList.add("purple")
@@ -88,6 +86,8 @@
                             document.getElementById("border").classList.remove("purple")
                         }, 3000);
                     }, 1000);
+                /*if (window.localStorage.kou == "出口") {
+                   
                     
                 } else {
                     document.getElementById("kou").style.backgroundColor = '#469142'
@@ -101,7 +101,7 @@
                             document.getElementById("border").classList.remove("green")
                         }, 3000);
                     }, 1000);
-                }
+                }*/
             
             var localTime = new Date();
             var month = localTime.getMonth() + 1;
